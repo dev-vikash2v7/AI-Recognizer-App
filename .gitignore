@@ -1,0 +1,25 @@
+# node
+node_modules/**/*
+npm-debug.*
+
+# expo
+.expo/*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+web-report/
+
+
+
+
+# Visual Studio Code
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+
+# macOS
+.DS_Store

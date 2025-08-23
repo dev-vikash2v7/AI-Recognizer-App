@@ -1,0 +1,32 @@
+# Ignore node_modules (they are installed during build)
+node_modules
+
+# Ignore version control
+.git
+.gitignore
+
+# Ignore build outputs
+ios/build
+android/build
+web-build
+dist
+
+# Ignore OS/system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor configs
+.vscode
+.idea
+
+# Ignore cache
+.expo
+.expo-shared
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore environment files if not needed in build
+.env.local
+.env.development
+.env.test

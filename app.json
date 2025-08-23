@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "displayName": "Recognizer App",
+    "name": "Recognizer App",
+    "slug": "recognizer-app",
+    "version": "1.0.0",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "recognizerapp",
+    "orientation": "portrait",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.recognizerapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#fefffe"
+      },
+      "package": "com.recognizerapp"
+    },
+    "owner": "vikash129",
+    "plugins": [
+      "expo-asset",
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b10a8929-a76d-406d-a269-257297245cf5"
+      }
+    }
+  }
+}
