@@ -1,4 +1,4 @@
-package com.objectdetection
+package com.airecognizer
 
 import android.app.Application
 import android.content.res.Configuration

@@ -1,13 +1,15 @@
 # Ignore node_modules (they are installed during build)
 node_modules
 
+android
+ios 
 # Ignore version control
 .git
 .gitignore
 
 # Ignore build outputs
-ios/build
-android/build
+# ios/build
+# android/build
 web-build
 dist
 
@@ -30,3 +32,4 @@ yarn-error.log*
 .env.local
 .env.development
 .env.test
+

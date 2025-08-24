@@ -1,4 +1,4 @@
-package com.objectdetection
+package com.airecognizer
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build
