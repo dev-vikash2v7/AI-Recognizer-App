@@ -1,12 +1,40 @@
-# 🤖 Recognition App
+<div align="center">
+  <div>
+   <img src="https://img.shields.io/badge/-React_Native-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
+   <img src="https://img.shields.io/badge/Expo-black?style=for-the-badge&logoColor=white&logo=expo&color=yellow" alt="python" />
+   <img src="https://img.shields.io/badge/Tensorflow-black?style=for-the-badge&logoColor=white&logo=tensorflow&color=green" alt="sql" />
+   <img src="https://img.shields.io/badge/Clarifai-blue?style=for-the-badge&logoColor=black&logo=clarifai&color=blue" alt="gemini" />
+   <img src="https://img.shields.io/badge/Async_Storage-red?style=for-the-badge&logoColor=red&logo=asyncstorage&color=black" alt="Twilio" />
+   <img src="https://img.shields.io/badge/Android-white?style=for-the-badge&logoColor=green&logo=android&color=white" alt="whatsapp" />
+  </div>
+  <h3 align="center"> 🤖Object Recognition and Image Conversion App
+</h3>
+</div>
 
+
+
+## <a name="introduction">🤖 Introduction</a>
 An **AI-powered image recognition & conversion app** built with **Expo + React Native**.  
 It demonstrates deep learning models for **object detection**, **food recognition**, **text-to-image conversion**, and **multicultural appearance classification**.
+
+
+<p align="center">
+
+<img src="./assets/images/icon.png" width="200px" />
+
+</p>
+
 
 ---
 ## Screenshots:
 
-![Screenshot 1](./assets/screenshots/screenshot-1.jpg) ![Screenshot 2](./assets/screenshots/screenshot-2.jpg) ![Screenshot 3](./assets/screenshots/screenshot-3.jpg) ![Screenshot 4](./assets/screenshots/screenshot-4.jpg) ![Screenshot 4](./assets/screenshots/screenshot-5.jpg)
+<p align="center" width ="1000px">
+  <img src="./assets/screenshots/screenshot-1.jpg" alt="Screenshot 1" width="200"/>
+  <img src="./assets/screenshots/screenshot-2.jpg" alt="Screenshot 2" width="200"/>
+  <img src="./assets/screenshots/screenshot-3.jpg" alt="Screenshot 3" width="200"/>
+  <img src="./assets/screenshots/screenshot-4.jpg" alt="Screenshot 4" width="200"/>
+  <img src="./assets/screenshots/screenshot-5.jpg" alt="Screenshot 5" width="200"/>
+</p>
 
 
 ## 📱 Features
