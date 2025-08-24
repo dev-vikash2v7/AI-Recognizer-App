@@ -10,7 +10,7 @@
     "skipLibCheck": true,
     "noEmitOnError": false,
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
