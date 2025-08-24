@@ -13,10 +13,11 @@ export default function App() {
   if (!isLoadingComplete) {
     return null;
   } else {
+
     return (
-      <SafeAreaView >
+      <SafeAreaView style={{flex: 1}}>
         <Navigation colorScheme={colorScheme} />
-        <StatusBar />
+        <StatusBar  style='dark' />
         </SafeAreaView>
     );
   }

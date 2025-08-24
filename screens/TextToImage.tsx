@@ -9,18 +9,9 @@ import {
   Alert,
 } from "react-native";
 import { Text, View } from "../components/Themed";
-import axios from "axios";
-import { CLARIFAI_API_KEY } from "@env";
-
-const USER_ID = 'xai';
-const APP_ID = 'image-generation';
-// Change these to whatever model and text you want to use
-const MODEL_ID = 'grok-2-image-1212';
-const MODEL_VERSION_ID = '9bf7ad8e9cf642d6a83668f390cc3fc7';
 
 import * as FileSystem from 'expo-file-system';
 import * as MediaLibrary from 'expo-media-library';
-import * as Permissions from 'expo-permissions';
 
 export default function TextToImageScreen() {
   const [prompt, setPrompt] = useState("");
@@ -32,28 +23,6 @@ export default function TextToImageScreen() {
 
       setGeneratedImage(null);
 
-    //   const response = await axios.post(
-    //     `https://api.clarifai.com/v2/models/${MODEL_ID}/versions/${MODEL_VERSION_ID}/outputs`,
-    //     {
-    //         user_app_id: {
-    //             user_id: USER_ID,
-    //             app_id: APP_ID,
-    //           },
-    //       inputs: [
-    //         {
-    //           data: {
-    //             text: { raw: prompt },
-    //           },
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       headers: {
-    //         Authorization: `Key ${CLARIFAI_API_KEY}`,
-    //         Accept: "application/json",
-    //       },
-    //     }
-    //   );
     setGeneratedImage( `https://pollinations.ai/p/${prompt}`);
    
 
@@ -75,7 +44,6 @@ export default function TextToImageScreen() {
             const fileUri = FileSystem.cacheDirectory + prompt + ".jpg";
             const { uri: localUri } = await FileSystem.downloadAsync(generatedImage, fileUri);
 
-            // Save to media library
             const asset = await MediaLibrary.createAssetAsync(localUri);
             await MediaLibrary.createAlbumAsync("Download", asset, false);
 
@@ -93,7 +61,7 @@ export default function TextToImageScreen() {
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.contentContainer}>
-        <Text style={styles.headerText}>Text → Image (via Pollinations)</Text>
+        <Text style={styles.headerText}>Text Prompt → Image  Generation</Text>
 
         <TextInput
           style={styles.input}
@@ -120,9 +88,12 @@ export default function TextToImageScreen() {
           }}
           />
 
+{generatedImage && (
           <View style={{ marginTop: 10 }}>
           <Button title="Download Image" onPress={downloadImage} />
         </View>
+)}
+
 </>
         )}
       </ScrollView>

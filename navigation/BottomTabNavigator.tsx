@@ -22,9 +22,8 @@ export default function BottomTabNavigator() {
   return (
     <BottomTab.Navigator
       initialRouteName="Home"
-      // tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme].tint,
+        tabBarActiveTintColor: Colors[colorScheme].tabIconSelected,
         tabBarStyle: [
           {
             display: "flex",
@@ -56,6 +55,17 @@ export default function BottomTabNavigator() {
     tabBarLabel: "Text to Image",
   }}
 />
+
+<BottomTab.Screen
+  name="Home"
+  component={HomeScreen}
+  options={{
+    tabBarIcon: ({ color }) => (
+      <TabBarIcon name="code" color={color} />
+    ),
+    tabBarLabel: "Intro",
+  }}
+/>
   <BottomTab.Screen
     name="Detect Food Items"
     component={DetectFoodsScreen}
@@ -66,16 +76,6 @@ export default function BottomTabNavigator() {
       tabBarLabel: "Detect Foods",
     }}
   />
-        <BottomTab.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{
-            tabBarIcon: ({ color }) => (
-              <TabBarIcon name="code" color={color} />
-            ),
-            tabBarLabel: "Intro",
-          }}
-        />
 
       <BottomTab.Screen
         name="Ethnicity Recognition"

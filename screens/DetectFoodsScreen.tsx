@@ -26,9 +26,7 @@ export default function DetectFoodsScreen() {
   const [predictions, setPredictions] = useState(null);
   const [imageToAnalyze, setImageToAnalyze] = useState(null);
 
-  // const clarifaiApp = new Clarifai.App({
-  //   apiKey: "e0b9675568584ceb9bf8a3f489ce81cd",
-  // });
+ 
   process.nextTick = setImmediate;
 
   useEffect(() => {
@@ -70,6 +68,8 @@ export default function DetectFoodsScreen() {
           },
         }
       );
+
+      console.log("Clarifai response:", response.data);
   
       const newPredictions = response.data.outputs[0].data.concepts;
       console.log("Clarifai predictions:",newPredictions);
@@ -158,7 +158,7 @@ export default function DetectFoodsScreen() {
               console.log("=== Detect foods predictions: ===")}
 
             {predictions &&
-              predictions.map(
+              predictions.slice(0, 3).map(
                 (
                   p: { name: React.ReactNode; value: React.ReactNode },
                   index: string | number | null | undefined
@@ -166,7 +166,7 @@ export default function DetectFoodsScreen() {
                   console.log(`${index} ${p.name}: ${p.value}`);
                   return (
                     <Text key={index} style={styles.text}>
-                      {p.name}: {parseFloat(p.value).toFixed(3)}
+                      {p.name}: {parseFloat(p.value).toFixed(3) * 100}%
                     </Text>
                   );
                 }

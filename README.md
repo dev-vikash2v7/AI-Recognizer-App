@@ -6,10 +6,7 @@ It demonstrates deep learning models for **object detection**, **food recognitio
 ---
 ## Screenshots:
 
-![Screenshot 1](./assets/screenshots/screenshot-1.jpg)
-![Screenshot 2](./assets/screenshots/screenshot-2.jpg)
-![Screenshot 3](./assets/screenshots/screenshot-3.jpg)
-![Screenshot 4](./assets/screenshots/screenshot-4.jpg)
+![Screenshot 1](./assets/screenshots/screenshot-1.jpg) ![Screenshot 2](./assets/screenshots/screenshot-2.jpg) ![Screenshot 3](./assets/screenshots/screenshot-3.jpg) ![Screenshot 4](./assets/screenshots/screenshot-4.jpg) ![Screenshot 4](./assets/screenshots/screenshot-5.jpg)
 
 
 ## 📱 Features

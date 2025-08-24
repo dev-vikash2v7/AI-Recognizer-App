@@ -160,6 +160,7 @@ console.log("Base64 length:", base64.length);
               {isTfReady ? (
                 <Text style={styles.text}>✅</Text>
               ) : (
+
                 <ActivityIndicator size="small" />
               )}
             </View>
@@ -233,7 +234,7 @@ console.log("Base64 length:", base64.length);
                     key={index}
                     style={{ ...styles.text, color: borderColors[index % 5] }}
                   >
-                    {p.class}: {p.score} {/* p.bbox */}
+                    {p.class.toUpperCase()} : {(p.score * 100).toFixed(2)}%
                   </Text>
                 );
               })}

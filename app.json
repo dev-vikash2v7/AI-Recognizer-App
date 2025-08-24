@@ -1,8 +1,8 @@
 {
   "expo": {
-    "displayName": "Recognizer App",
-    "name": "Recognizer App",
-    "slug": "recognizer-app",
+    "displayName": "Recognizer & Object Detection App",
+    "name": "Recognizer & Object Detection App",
+    "slug": "image-object-detection-and-recognition",
     "version": "1.0.0",
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "dark",

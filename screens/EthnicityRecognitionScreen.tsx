@@ -156,15 +156,14 @@ export default function EthnicityRecognitionScreen() {
               console.log("===  Ethnicity predictions: ===")}
 
             {predictions &&
-              predictions.map(
+              predictions.slice(0, 3).map(
                 (
                   p: { name: React.ReactNode; value: React.ReactNode },
                   index: string | number | null | undefined
                 ) => {
-                  console.log(`${index} ${p.name}: ${p.value}`);
                   return (
                     <Text key={index} style={styles.text}>
-                      {p.name}: {parseFloat(p.value).toFixed(3)}
+                      {p.name}: {parseFloat(p.value).toFixed(4) * 100}%
                     </Text>
                   );
                 }

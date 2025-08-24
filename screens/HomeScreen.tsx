@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ScrollView, StyleSheet, TouchableOpacity, Dimensions } from "react-native";
+import { ScrollView, StyleSheet, TouchableOpacity, Dimensions, Image } from "react-native";
 import { Text, View } from "../components/Themed";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
@@ -65,7 +65,7 @@ export default function TabOneScreen() {
         {/* Header */}
         <View style={styles.headerContainer}>
           <View style={styles.headerIconContainer}>
-            <Ionicons name="sparkles" size={32} color="#4a90e2" />
+            <Image source={require('../assets/images/icon.png')} style={{width: 60, height: 60, borderRadius: 30}} />
           </View>
           <Text style={styles.headerText}>AI Recognition & Conversion</Text>
           <Text style={styles.subHeaderText}>
@@ -73,17 +73,8 @@ export default function TabOneScreen() {
           </Text>
         </View>
 
-        {/* Intro */}
-        <View style={styles.getStartedContainer}>
-          <Text style={styles.getStartedText}>
-            This app demonstrates pre-trained deep learning models that classify
-            images, detect objects, and generate AI-powered visuals. Built with{" "}
-            <Text style={{ fontWeight: "bold", color: "#4a90e2" }}>Expo + React Native</Text>, it
-            runs smoothly on both iOS and Android devices.
-          </Text>
-        </View>
+      
 
-        {/* Feature Cards */}
         <View style={styles.cardsContainer}>
           {featureCards.map((card) => (
             <TouchableOpacity
@@ -106,12 +97,7 @@ export default function TabOneScreen() {
           ))}
         </View>
 
-        {/* Footer */}
-        <View style={styles.footerContainer}>
-          <Text style={styles.footerText}>
-            Tap any card above to explore the AI features
-          </Text>
-        </View>
+       
       </ScrollView>
     </View>
   );
@@ -120,7 +106,7 @@ export default function TabOneScreen() {
 const styles = StyleSheet.create({
   container: { 
     flex: 1, 
-    backgroundColor: "#f8f9fa" 
+    // backgroundColor: "#f8f9fa" 
   },
   contentContainer: { 
     paddingVertical: 20, 
@@ -136,7 +122,7 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     borderRadius: 30,
-    backgroundColor: "#4a90e2",
+    // backgroundColor: "#4a90e2",
     justifyContent: "center",
     alignItems: "center",
     marginBottom: 16,
