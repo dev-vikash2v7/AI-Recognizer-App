@@ -1,12 +1,12 @@
 {
   "expo": {
-    "displayName": "Recognizer & Object Detection App",
-    "name": "Recognizer & Object Detection App",
-    "slug": "image-object-detection-and-recognition",
+    "displayName": "AI Recognizer",
+    "name": "AI Recognizer",
+    "slug": "ai-recognizer",
     "version": "1.0.0",
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "dark",
-    "scheme": "recognizerapp",
+    "scheme": "airecognizer",
     "orientation": "portrait",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -18,7 +18,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.recognizerapp",
+      "bundleIdentifier": "com.airecognizer",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
@@ -28,18 +28,14 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#fefffe"
       },
-      "package": "com.recognizerapp"
+      "package": "com.airecognizer"
     },
     "owner": "vikash129",
     "plugins": [
       "expo-asset",
       "expo-font",
       "expo-web-browser"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "b10a8929-a76d-406d-a269-257297245cf5"
-      }
-    }
+    ]
+   
   }
 }
