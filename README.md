@@ -24,6 +24,9 @@ It demonstrates deep learning models for **object detection**, **food recognitio
 
 </p>
 
+---
+
+## <a href="https://youtube.com/shorts/gs543-4YLsE?feature=share" >Demo</a>
 
 ---
 ## Screenshots:
